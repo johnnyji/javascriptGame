@@ -17,7 +17,14 @@
 
 body {
 	height: 100vh;
-	background-color: black;
+}
+
+html {
+	background: url(background.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body a {
@@ -55,14 +62,14 @@ body a {
 	-moz-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
-	background-color: black;
+	background-color: transparent;
 	z-index: 0;
 }
 
 .game-container img {
 	position: absolute;
-	width: 103%;
-	height: 105%;
+	width: 102%;
+	height: 103%;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
@@ -98,6 +105,28 @@ body a {
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 	left: 50%;
+}
+
+.title {
+	position: absolute;
+	left: 6%;
+	top: 12%;
+	font-family: "title-font";
+	font-size: 1.3em;
+}
+
+.title2 {
+	position: absolute;
+	left: 12%;
+	top: 35%;
+	font-family: "title-font";
+	font-size: 1.4em;
+}
+
+.title h1, .title2 h1 {
+	color: #bdc3c7;
+	text-shadow: 5px 4px 1px #A31B18,
+							 6px 5px 1px #2980b9;
 }
 
 
@@ -225,8 +254,6 @@ body a {
 
 .reset-button {
 	position: absolute;
-	background-color: orange;
-	position: absolute;
 	width: auto;
 	height: auto;
 	padding-left: 2em;
@@ -240,6 +267,21 @@ body a {
 	cursor: pointer;
 	letter-spacing: 1px;
 }
+
+.reset-button img {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	width: 120%;
+	height: 120%;
+	z-index: -1;
+}
+
+
 
 .reset-button h3:hover {
 	-webkit-transform: scale(1.1);
