@@ -1,6 +1,6 @@
 @font-face {
     font-family: title-font;
-    src: url(retro.ttf);
+    src: url('retro.TTF');
 }
 
 * {
